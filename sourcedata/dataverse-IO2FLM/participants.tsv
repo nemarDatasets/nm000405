@@ -1,0 +1,17 @@
+participant_id	age	sex	disease	center	curator	UPDRS_total	UPDRS_left	UPDRS_right	line_noise	Length_of_diagnosis_prior_to_surgery	hand
+sub-000	n/a	F	PD	UPMC	Richardson	28	11	9	60	10.7	n/a
+sub-001	n/a	M	PD	UPMC	Richardson	27	5	7	60	14	n/a
+sub-002	n/a	M	PD	UPMC	Richardson	40	10	16	60	4.5	n/a
+sub-003	n/a	M	PD	UPMC	Richardson	n/a	n/a	n/a	60	21.8	n/a
+sub-004	n/a	M	PD	UPMC	Richardson	33	13	13	60	7.2	n/a
+sub-005	n/a	M	PD	UPMC	Richardson	31	16	11	60	10.1	n/a
+sub-006	n/a	M	PD	UPMC	Richardson	32	14	7	60	13.1	n/a
+sub-007	n/a	M	PD	UPMC	Richardson	52	20	15	60	5.9	n/a
+sub-008	n/a	M	PD	UPMC	Richardson	55	14	20	60	1.4	n/a
+sub-009	n/a	M	PD	UPMC	Richardson	50	24.5	15	60	8.7	n/a
+sub-010	n/a	M	PD	UPMC	Richardson	62	24	22	60	9.8	n/a
+sub-011	n/a	F	PD	UPMC	Richardson	54	19	12	60	13.4	n/a
+sub-012	n/a	M	PD	UPMC	Richardson	34	10	10	60	11.1	n/a
+sub-013	n/a	M	PD	UPMC	Richardson	48	19	14	60	17.1	n/a
+sub-014	n/a	F	PD	UPMC	Richardson	31	10	6	60	10.4	n/a
+sub-015	n/a	M	PD	UPMC	Richardson	42	18	10	60	8.9	n/a

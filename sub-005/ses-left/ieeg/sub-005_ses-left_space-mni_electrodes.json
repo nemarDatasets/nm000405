@@ -1,0 +1,12 @@
+{
+  "SpatialReference": "MNI template as labelled by the authors (space-mni); exact template not stated in the release",
+  "x": {
+    "Units": "m"
+  },
+  "y": {
+    "Units": "m"
+  },
+  "z": {
+    "Units": "m"
+  }
+}

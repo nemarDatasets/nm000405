@@ -1,0 +1,53 @@
+{
+  "participant_id": {
+    "Description": "Unique participant identifier"
+  },
+  "age": {
+    "Description": "Age of the participant at time of testing",
+    "Units": "years"
+  },
+  "sex": {
+    "Description": "Biological sex of the participant",
+    "Levels": {
+      "F": "female",
+      "M": "male"
+    }
+  },
+  "hand": {
+    "Description": "Handedness of the participant",
+    "Levels": {
+      "R": "right",
+      "L": "left",
+      "A": "ambidextrous"
+    }
+  },
+  "disease": {
+    "Description": "Diagnosis (source column)",
+    "Levels": {
+      "PD": "Parkinson's disease"
+    }
+  },
+  "center": {
+    "Description": "Recording centre (source column); UPMC = University of Pittsburgh Medical Center"
+  },
+  "curator": {
+    "Description": "Data curator / principal investigator at the centre (source column)"
+  },
+  "UPDRS_total": {
+    "Description": "MDS-UPDRS part III total score, off medication, 1-3 months before surgery (paper methods)"
+  },
+  "UPDRS_left": {
+    "Description": "MDS-UPDRS part III left-body subscore (source column)"
+  },
+  "UPDRS_right": {
+    "Description": "MDS-UPDRS part III right-body subscore (source column)"
+  },
+  "line_noise": {
+    "Description": "Power-line frequency",
+    "Units": "Hz"
+  },
+  "Length_of_diagnosis_prior_to_surgery": {
+    "Description": "Disease duration before surgery",
+    "Units": "years"
+  }
+}

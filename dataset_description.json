@@ -1,0 +1,46 @@
+{
+  "Name": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC0",
+  "Authors": [
+    "Timon Merk",
+    "Victoria Peterson",
+    "Witold Lipski",
+    "Benjamin Blankertz",
+    "Robert S Turner",
+    "Ningfei Li",
+    "Andreas Horn",
+    "Robert Mark Richardson",
+    "Wolf-Julian Neumann"
+  ],
+  "HowToAcknowledge": "Cite Merk T, Peterson V, Lipski WJ, Blankertz B, Turner RS, Li N, Horn A, Richardson RM, Neumann WJ (2022). Electrocorticography is superior to subthalamic local field potentials for movement decoding in Parkinson's disease. eLife 11:e75126. doi:10.7554/eLife.75126; and the Harvard Dataverse record doi:10.7910/DVN/IO2FLM.",
+  "Funding": [
+    "NIH R01NS110424 (Turner, Richardson, Neumann)",
+    "BMBF FKZ01GQ1802 (Neumann)",
+    "DFG 410169619 (Horn)",
+    "DFG Project-ID 424778371 - TRR 295"
+  ],
+  "EthicsApprovals": [
+    "Institutional Review Board of the University of Pittsburgh, protocol #PRO13110420 (paper methods)"
+  ],
+  "ReferencesAndLinks": [
+    "https://doi.org/10.7554/eLife.75126",
+    "https://doi.org/10.7910/DVN/IO2FLM",
+    "https://github.com/neuromodulation/ECoG_vs_STN"
+  ],
+  "DatasetDOI": "n/a",
+  "GeneratedBy": [
+    {
+      "Name": "Authors' MNE-BIDS / pybv export",
+      "Description": "Signals digitised at 30 kHz (Ripple Grapevine) and resampled to 1 kHz by the authors; grip-force traces additionally provided cleaned (MOV_*_CLEAN). Re-organised into BIDS folders by NEMAR batch3 (Dataverse release is flat); signal values unchanged."
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.7910/DVN/IO2FLM",
+      "URL": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IO2FLM",
+      "Version": "1.0 (2022-04-19)"
+    }
+  ]
+}
