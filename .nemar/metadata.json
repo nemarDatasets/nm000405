@@ -1,0 +1,124 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Timon Merk": {
+      "orcid": "0000-0003-3011-2612"
+    },
+    "Victoria Peterson": {},
+    "Witold Lipski": {},
+    "Benjamin Blankertz": {
+      "orcid": "0000-0002-2437-4846"
+    },
+    "Robert S Turner": {
+      "orcid": "0000-0002-6074-4365"
+    },
+    "Ningfei Li": {},
+    "Andreas Horn": {
+      "orcid": "0000-0002-0695-6025"
+    },
+    "Robert Mark Richardson": {
+      "orcid": "0000-0003-2620-7387"
+    },
+    "Wolf-Julian Neumann": {
+      "orcid": "0000-0002-6758-9708"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.7910/DVN/IO2FLM",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.7554/eLife.75126",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000405",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000405",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "NIH",
+      "award_number": "R01NS110424"
+    },
+    {
+      "funder_name": "BMBF",
+      "award_number": "FKZ01GQ1802"
+    },
+    {
+      "funder_name": "DFG",
+      "award_number": "410169619"
+    },
+    {
+      "funder_name": "DFG",
+      "award_number": "424778371",
+      "award_title": "TRR 295"
+    }
+  ],
+  "title": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
+  "license": "CC0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "1.34 GB (147 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "Intraoperative recordings from 16 people with Parkinson's disease performing a grip-force task during bilateral subthalamic nucleus (STN) deep brain stimulation lead implantation. Each run includes subdural ECoG over sensorimotor cortex, STN local field potentials, and grip-force channels. The data were used to compare electrocorticography with subthalamic LFPs for movement decoding. This BIDS derivative reorganizes the 1 kHz resampled signals released on Harvard Dataverse.",
+  "methods_description": "Signals were recorded intraoperatively with a Ripple Grapevine system (filtered 0.3-7.5 kHz, digitised at 30 kHz) and resampled to 1 kHz. Recordings comprise a subdural ECoG strip, four STN DBS lead contacts, and bilateral grip-force traces, with noise- and drift-cleaned force versions also provided.",
+  "keywords": [
+    {
+      "term": "Parkinson Disease",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
+    },
+    {
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "Subthalamic Nucleus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "local field potentials"
+    },
+    {
+      "term": "grip force"
+    },
+    {
+      "term": "movement decoding"
+    }
+  ],
+  "source_hash": "75297945469fc82ff7b17f28a7019fd12857008f6f83dee06c30f773a0d6caae"
+}
