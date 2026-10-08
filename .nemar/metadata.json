@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
+  "description": "Intraoperative electrocorticography (ECoG) from subdural strips over sensorimotor cortex and subthalamic nucleus local field potentials (STN LFP) recorded during a grip-force task in 16 people with Parkinson's disease undergoing DBS lead implantation. The dataset contains 73 runs, resampled to 1 kHz, with grip-force traces and MNI-space electrode locations. It supports comparison of cortical and subthalamic signals for movement decoding.",
+  "methods_description": "Recordings were made intraoperatively during bilateral STN-DBS lead implantation using a Grapevine neural interface processor (Ripple). Signals were filtered at 0.3-7.5 kHz, digitised at 30 kHz and resampled to 1 kHz. ECoG was recorded from temporary subdural strips and STN LFP from four-contact DBS leads (Medtronic 3389). Contacts were localised from MRI, CT and fluoroscopy and transformed into MNI space (Lead-DBS).",
+  "license": "CC0",
+  "dataset_type": "derivative",
   "authors": {
     "Timon Merk": {
       "orcid": "0000-0003-3011-2612"
@@ -24,6 +29,40 @@
       "orcid": "0000-0002-6758-9708"
     }
   },
+  "keywords": [
+    {
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+    },
+    {
+      "term": "Parkinson Disease",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
+    },
+    {
+      "term": "Subthalamic Nucleus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
+    },
+    {
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "iEEG"
+    },
+    {
+      "term": "local field potentials"
+    },
+    {
+      "term": "grip force"
+    },
+    {
+      "term": "movement decoding"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.7910/DVN/IO2FLM",
@@ -65,14 +104,11 @@
       "award_title": "TRR 295"
     }
   ],
-  "title": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
-  "license": "CC0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "iEEG Dataset",
   "modalities": [
     "ieeg"
   ],
-  "resource_type_specific": "iEEG Dataset",
   "sizes": [
     "1.34 GB (147 files)"
   ],
@@ -82,43 +118,8 @@
     ".md",
     ".tsv",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "Intraoperative recordings from 16 people with Parkinson's disease performing a grip-force task during bilateral subthalamic nucleus (STN) deep brain stimulation lead implantation. Each run includes subdural ECoG over sensorimotor cortex, STN local field potentials, and grip-force channels. The data were used to compare electrocorticography with subthalamic LFPs for movement decoding. This BIDS derivative reorganizes the 1 kHz resampled signals released on Harvard Dataverse.",
-  "methods_description": "Signals were recorded intraoperatively with a Ripple Grapevine system (filtered 0.3-7.5 kHz, digitised at 30 kHz) and resampled to 1 kHz. Recordings comprise a subdural ECoG strip, four STN DBS lead contacts, and bilateral grip-force traces, with noise- and drift-cleaned force versions also provided.",
-  "keywords": [
-    {
-      "term": "Parkinson Disease",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
-    },
-    {
-      "term": "Electrocorticography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
-    },
-    {
-      "term": "Subthalamic Nucleus",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
-    },
-    {
-      "term": "Deep Brain Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
-    },
-    {
-      "term": "iEEG"
-    },
-    {
-      "term": "local field potentials"
-    },
-    {
-      "term": "grip force"
-    },
-    {
-      "term": "movement decoding"
-    }
-  ],
-  "source_hash": "75297945469fc82ff7b17f28a7019fd12857008f6f83dee06c30f773a0d6caae"
+  "source_hash": "87bca61df098cfb15e64c88ab8080a56c01c9cbb4c101ddbf2bfc96463d1a006"
 }
