@@ -49,5 +49,21 @@
   "Length_of_diagnosis_prior_to_surgery": {
     "Description": "Disease duration before surgery",
     "Units": "years"
+  },
+  "implant_type": {
+    "Description": "Electrode types present in the subject-level electrodes.tsv (ECOG_* = subdural strip; STN_* = DBS lead, Medtronic 3389 per paper)",
+    "Source": "deposit sub-XXX_electrodes*.tsv; paper Methods 'Electrophysiological recordings'"
+  },
+  "implanted_hemisphere": {
+    "Description": "Hemispheres with contacts in the subject-level electrodes files (from channel names _LEFT_/_RIGHT_)",
+    "Source": "deposit sub-XXX_electrodes*.tsv"
+  },
+  "n_ecog_contacts": {
+    "Description": "ECoG strip contacts",
+    "Source": "deposit sub-XXX_electrodes*.tsv"
+  },
+  "n_stn_contacts": {
+    "Description": "STN DBS-lead contacts",
+    "Source": "deposit sub-XXX_electrodes*.tsv"
   }
 }
