@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
-  "description": "Intraoperative electrocorticography (ECoG) from subdural strips over sensorimotor cortex and subthalamic nucleus local field potentials (STN LFP) recorded during a grip-force task in 16 people with Parkinson's disease undergoing DBS lead implantation. The dataset contains 73 runs, resampled to 1 kHz, with grip-force traces and MNI-space electrode locations. It supports comparison of cortical and subthalamic signals for movement decoding.",
-  "methods_description": "Recordings were made intraoperatively during bilateral STN-DBS lead implantation using a Grapevine neural interface processor (Ripple). Signals were filtered at 0.3-7.5 kHz, digitised at 30 kHz and resampled to 1 kHz. ECoG was recorded from temporary subdural strips and STN LFP from four-contact DBS leads (Medtronic 3389). Contacts were localised from MRI, CT and fluoroscopy and transformed into MNI space (Lead-DBS).",
+  "description": "Intraoperative recordings from 16 patients with Parkinson's disease undergoing bilateral subthalamic nucleus deep brain stimulation lead implantation, performing a grip-force task. Each of 73 runs contains subdural ECoG strip signals over sensorimotor cortex, subthalamic nucleus local field potentials, and grip-force traces, resampled to 1 kHz. The data support comparison of ECoG and STN LFP for movement decoding and include electrode locations in MNI space.",
+  "methods_description": "Signals were recorded with a Ripple Grapevine system, filtered at 0.3-7.5 kHz and digitised at 30 kHz, then resampled to 1 kHz. ECoG came from temporary subdural strips placed over sensorimotor cortex, and STN LFPs came from Medtronic 3389 DBS leads. Electrodes were localised using co-registered MRI, CT and fluoroscopy, and Lead-DBS for the DBS leads.",
   "license": "CC0",
   "dataset_type": "derivative",
   "authors": {
@@ -121,5 +121,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "87bca61df098cfb15e64c88ab8080a56c01c9cbb4c101ddbf2bfc96463d1a006"
+  "source_hash": "23fd81cccf988bc8b746329aa2a6340c802753ca9c2aa5483294996e3047862d"
 }
