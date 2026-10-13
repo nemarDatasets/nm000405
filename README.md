@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000405-blue)](https://doi.org/10.82901/nemar.nm000405)
+
 # Intraoperative ECoG + STN LFP during grip force in Parkinson's disease (Merk et al. 2022)
 
 Replication data for: Merk T. et al. (2022) "Electrocorticography is superior to subthalamic local field potentials
