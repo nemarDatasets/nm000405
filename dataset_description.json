@@ -30,7 +30,7 @@
     "https://github.com/neuromodulation/ECoG_vs_STN",
     "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9142148/"
   ],
-  "DatasetDOI": "n/a",
+  "DatasetDOI": "10.82901/nemar.nm000405",
   "GeneratedBy": [
     {
       "Name": "Authors' MNE-BIDS / pybv export",
@@ -42,6 +42,10 @@
       "DOI": "doi:10.7910/DVN/IO2FLM",
       "URL": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/IO2FLM",
       "Version": "1.0 (2022-04-19)"
+    },
+    {
+      "DOI": "n/a"
     }
-  ]
+  ],
+  "Version": "1.0.0"
 }
