@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
-  "description": "Intraoperative recordings from 16 patients with Parkinson's disease undergoing bilateral subthalamic nucleus deep brain stimulation lead implantation, performing a grip-force task. Each of 73 runs contains subdural ECoG strip signals over sensorimotor cortex, subthalamic nucleus local field potentials, and grip-force traces, resampled to 1 kHz. The data support comparison of ECoG and STN LFP for movement decoding and include electrode locations in MNI space.",
-  "methods_description": "Signals were recorded with a Ripple Grapevine system, filtered at 0.3-7.5 kHz and digitised at 30 kHz, then resampled to 1 kHz. ECoG came from temporary subdural strips placed over sensorimotor cortex, and STN LFPs came from Medtronic 3389 DBS leads. Electrodes were localised using co-registered MRI, CT and fluoroscopy, and Lead-DBS for the DBS leads.",
+  "description": "Intraoperative recordings from 16 people with Parkinson's disease undergoing bilateral subthalamic nucleus deep brain stimulation (DBS) lead implantation. Subdural electrocorticography (ECoG) strips over sensorimotor cortex and subthalamic local field potentials were recorded simultaneously during a grip-force task, together with grip-force traces. The data support comparison of cortical and subthalamic signals for movement decoding. Signals were resampled to 1 kHz and organized in BIDS format with MNI-space electrode localizations.",
+  "methods_description": "Signals were acquired with a Grapevine neural interface processor (Ripple), filtered at 0.3-7.5 kHz, digitised at 30 kHz and resampled to 1 kHz. ECoG came from temporary subdural strips (6, 8 or 28 contacts) placed through frontal burr holes, and STN LFP from the four-contact Medtronic 3389 DBS lead. Contacts were localized using MRI, fluoroscopy and CT (strips) and Lead-DBS (DBS leads), then transformed to MNI space.",
   "license": "CC0",
   "dataset_type": "derivative",
   "authors": {
@@ -41,14 +41,14 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
     },
     {
-      "term": "Subthalamic Nucleus",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
-    },
-    {
       "term": "Deep Brain Stimulation",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
+    },
+    {
+      "term": "Subthalamic Nucleus",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
     },
     {
       "term": "iEEG"
@@ -121,5 +121,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "23fd81cccf988bc8b746329aa2a6340c802753ca9c2aa5483294996e3047862d"
+  "source_hash": "d5805692a743977eec714662508bc84362f24c2a9c91e002ab70852b0cf554fc"
 }
