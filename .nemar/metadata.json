@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
-  "description": "Intraoperative recordings from 16 people with Parkinson's disease undergoing bilateral subthalamic nucleus deep brain stimulation (DBS) lead implantation. Subdural electrocorticography (ECoG) strips over sensorimotor cortex and subthalamic local field potentials were recorded simultaneously during a grip-force task, together with grip-force traces. The data support comparison of cortical and subthalamic signals for movement decoding. Signals were resampled to 1 kHz and organized in BIDS format with MNI-space electrode localizations.",
-  "methods_description": "Signals were acquired with a Grapevine neural interface processor (Ripple), filtered at 0.3-7.5 kHz, digitised at 30 kHz and resampled to 1 kHz. ECoG came from temporary subdural strips (6, 8 or 28 contacts) placed through frontal burr holes, and STN LFP from the four-contact Medtronic 3389 DBS lead. Contacts were localized using MRI, fluoroscopy and CT (strips) and Lead-DBS (DBS leads), then transformed to MNI space.",
+  "title": "Merk-2022-electrocorticography-10.7554/elife.75126",
+  "description": "Intraoperative electrocorticography (ECoG) and subthalamic nucleus local field potential (STN LFP) recordings from 16 patients with Parkinson's disease performing a grip-force task during bilateral DBS lead implantation. The dataset comprises 73 runs with subdural sensorimotor ECoG strips, four-contact STN DBS leads, and grip-force channels, with electrode locations in MNI space. It is a BIDS reorganisation of the Harvard Dataverse replication data supporting a study comparing ECoG and STN LFP for movement decoding.",
+  "methods_description": "Signals were recorded with a Grapevine neural interface processor (Ripple), filtered at 0.3-7.5 kHz, digitised at 30 kHz and resampled to 1 kHz. ECoG came from temporary subdural strips placed through frontal burr holes over sensorimotor cortex, and STN LFPs came from Medtronic 3389 DBS leads. Contacts were localised using preoperative MRI, fluoroscopy and postoperative CT, with Lead-DBS reconstruction for DBS leads and transformation to MNI space.",
   "license": "CC0",
   "dataset_type": "derivative",
   "authors": {
@@ -41,26 +41,23 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D010300"
     },
     {
-      "term": "Deep Brain Stimulation",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
-    },
-    {
       "term": "Subthalamic Nucleus",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D020531"
     },
     {
-      "term": "iEEG"
+      "term": "Deep Brain Stimulation",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
     },
     {
       "term": "local field potentials"
     },
     {
-      "term": "grip force"
+      "term": "movement decoding"
     },
     {
-      "term": "movement decoding"
+      "term": "grip force"
     }
   ],
   "related_identifiers": [
@@ -121,5 +118,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "d5805692a743977eec714662508bc84362f24c2a9c91e002ab70852b0cf554fc"
+  "source_hash": "d28d305649db564bdd3624f82322a6882c9673e42f14effa7c277132202a2c79"
 }
