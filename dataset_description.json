@@ -1,5 +1,5 @@
 {
-  "Name": "Intraoperative ECoG strip and subthalamic LFP during grip-force in Parkinson's disease (Merk et al. 2022)",
+  "Name": "Merk-2022-electrocorticography-10.7554/elife.75126",
   "BIDSVersion": "1.10.0",
   "DatasetType": "derivative",
   "License": "CC0",
@@ -47,5 +47,5 @@
       "DOI": "n/a"
     }
   ],
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
