@@ -1,3 +1,7 @@
+1.0.4 2026-10-17
+  - channels.tsv: MOV_* (MISC) units µV -> n/a (label only; commit cc840b6).
+  - README.md: section "Reading with MNE": the BrainVision headers still declare 0.1 µV per unit, so MNE returns ECoG/STN values of tens of volts; they are arbitrary units (channels.tsv n/a). No data or header file changed.
+
 1.0.3 2026-10-17
   - dataset_description.json: replace the citation-slug Name with the human-readable title supported by README.md. Dataset recordings unchanged. Source: README.md; https://doi.org/10.7554/eLife.75126.
 

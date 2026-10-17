@@ -54,3 +54,14 @@ Compiled after the upload from the article, its supplement and the source deposi
 The released BrainVision headers declare 0.1 µV per stored unit, but with that scaling every subject's median channel standard deviation is 1.8e7-7.3e7 µV (18-73 V), which is physically impossible for ECoG/STN LFP. The release does not state the true unit, so the voltage channels are now labelled `n/a` in channels.tsv. The stored values are unchanged; relative amplitudes within a recording are unaffected. Review: NEMAR curator, 2026-10-15 (the same recording is also in nm000466).
 
 2026-10-17: the four movement channels (`MOV_RIGHT`, `MOV_LEFT`, `MOV_RIGHT_CLEAN`, `MOV_LEFT_CLEAN`, type MISC) are now also labelled `n/a` in channels.tsv, because nothing in the release shows they are in µV. Values unchanged.
+
+## Reading with MNE (added 2026-10-17, version 1.0.4)
+
+MNE and MNE-BIDS take the scale from the BrainVision header, not from channels.tsv. The headers still declare
+`0.1 µV` per stored unit for every channel, so `mne_bids.read_raw_bids` / `mne.io.read_raw_brainvision` return the ECoG
+and STN channels with standard deviations of tens of volts (robust SD 1.7e7-4.0e7 µV in the runs checked on
+2026-10-17). These numbers are not physical voltages: treat the ECoG/STN values as arbitrary units (channels.tsv `n/a`,
+see "Units correction"); relative amplitudes within a recording are unaffected. The amplitudes would be typical
+ECoG/LFP values (tens of µV) if divided by 1e6, but the release does not state the scale, so no factor is applied here.
+The same holds for the movement channels (`MOV_*`): their headers say µV, channels.tsv `n/a`. The `.vhdr` headers are
+left as released.
