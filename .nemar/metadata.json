@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Merk-2022-electrocorticography-10.7554/elife.75126",
-  "description": "Intraoperative electrocorticography (ECoG) and subthalamic nucleus local field potential (STN LFP) recordings from 16 patients with Parkinson's disease performing a grip-force task during bilateral DBS lead implantation. The dataset comprises 73 runs with subdural sensorimotor ECoG strips, four-contact STN DBS leads, and grip-force channels, with electrode locations in MNI space. It is a BIDS reorganisation of the Harvard Dataverse replication data supporting a study comparing ECoG and STN LFP for movement decoding.",
-  "methods_description": "Signals were recorded with a Grapevine neural interface processor (Ripple), filtered at 0.3-7.5 kHz, digitised at 30 kHz and resampled to 1 kHz. ECoG came from temporary subdural strips placed through frontal burr holes over sensorimotor cortex, and STN LFPs came from Medtronic 3389 DBS leads. Contacts were localised using preoperative MRI, fluoroscopy and postoperative CT, with Lead-DBS reconstruction for DBS leads and transformation to MNI space.",
+  "title": "Cortical and subthalamic brain recordings during hand-grip tasks in 16 patients with Parkinson’s disease",
+  "description": "Intraoperative electrocorticography (ECoG) and subthalamic nucleus local field potential (STN LFP) recordings from 16 patients with Parkinson's disease performing a grip-force task during bilateral DBS lead implantation. The dataset comprises 73 runs with subdural cortical strips over sensorimotor cortex, four-contact STN DBS leads and grip-force channels. Electrode locations are provided in MNI space. The data support comparing cortical and subthalamic signals for movement decoding.",
+  "methods_description": "Signals were recorded with a Grapevine neural interface processor (Ripple), filtered at 0.3-7.5 kHz, digitised at 30 kHz and resampled to 1 kHz. ECoG came from temporary subdural strips placed through frontal burr holes, and STN LFPs from Medtronic 3389 DBS leads. Contacts were localised using preoperative MRI, fluoroscopy and postoperative CT, with Lead-DBS used for the DBS leads. Grip force was recorded during the task.",
   "license": "CC0",
   "dataset_type": "derivative",
   "authors": {
@@ -51,13 +51,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D046690"
     },
     {
+      "term": "iEEG"
+    },
+    {
       "term": "local field potentials"
     },
     {
-      "term": "movement decoding"
+      "term": "grip force"
     },
     {
-      "term": "grip force"
+      "term": "movement decoding"
     }
   ],
   "related_identifiers": [
@@ -118,5 +121,5 @@
     ".vmrk",
     ".yml"
   ],
-  "source_hash": "d28d305649db564bdd3624f82322a6882c9673e42f14effa7c277132202a2c79"
+  "source_hash": "0843b54dc17cd9627602200e783d47a33f5e929e7243e26589c482b2f32c79c1"
 }
