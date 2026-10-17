@@ -1,3 +1,6 @@
+1.0.3 2026-10-17
+  - dataset_description.json: replace the citation-slug Name with the human-readable title supported by README.md. Dataset recordings unchanged. Source: README.md; https://doi.org/10.7554/eLife.75126.
+
 1.0.1 2026-10-16
   - channels.tsv: voltage channels units -> n/a (stored values are not in the labelled unit; see README "Units correction"). Data unchanged.
 
