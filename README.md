@@ -52,3 +52,5 @@ Compiled after the upload from the article, its supplement and the source deposi
 ## Units correction (2026-10-16)
 
 The released BrainVision headers declare 0.1 µV per stored unit, but with that scaling every subject's median channel standard deviation is 1.8e7-7.3e7 µV (18-73 V), which is physically impossible for ECoG/STN LFP. The release does not state the true unit, so the voltage channels are now labelled `n/a` in channels.tsv. The stored values are unchanged; relative amplitudes within a recording are unaffected. Review: NEMAR curator, 2026-10-15 (the same recording is also in nm000466).
+
+2026-10-17: the four movement channels (`MOV_RIGHT`, `MOV_LEFT`, `MOV_RIGHT_CLEAN`, `MOV_LEFT_CLEAN`, type MISC) are now also labelled `n/a` in channels.tsv, because nothing in the release shows they are in µV. Values unchanged.

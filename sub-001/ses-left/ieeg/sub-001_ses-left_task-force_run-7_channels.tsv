@@ -30,7 +30,7 @@ ECOG_LEFT_24	ECOG	n/a	0.0	500.0	Electrocorticography	1000.0	good	n/a
 ECOG_LEFT_25	ECOG	n/a	0.0	500.0	Electrocorticography	1000.0	good	n/a
 ECOG_LEFT_26	ECOG	n/a	0.0	500.0	Electrocorticography	1000.0	good	n/a
 ECOG_LEFT_27	ECOG	n/a	0.0	500.0	Electrocorticography	1000.0	good	n/a
-MOV_RIGHT	MISC	µV	0.0	500.0	Miscellaneous	1000.0	good	n/a
-MOV_LEFT	MISC	µV	0.0	500.0	Miscellaneous	1000.0	good	n/a
-MOV_RIGHT_CLEAN	MISC	µV	0.0	500.0	Miscellaneous	1000.0	good	n/a
-MOV_LEFT_CLEAN	MISC	µV	0.0	500.0	Miscellaneous	1000.0	good	n/a
+MOV_RIGHT	MISC	n/a	0.0	500.0	Miscellaneous	1000.0	good	n/a
+MOV_LEFT	MISC	n/a	0.0	500.0	Miscellaneous	1000.0	good	n/a
+MOV_RIGHT_CLEAN	MISC	n/a	0.0	500.0	Miscellaneous	1000.0	good	n/a
+MOV_LEFT_CLEAN	MISC	n/a	0.0	500.0	Miscellaneous	1000.0	good	n/a
