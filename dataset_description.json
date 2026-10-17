@@ -1,5 +1,5 @@
 {
-  "Name": "Merk-2022-electrocorticography-10.7554/elife.75126",
+  "Name": "Cortical and subthalamic brain recordings during hand-grip tasks in 16 patients with Parkinson’s disease",
   "BIDSVersion": "1.10.0",
   "DatasetType": "derivative",
   "License": "CC0",
@@ -47,5 +47,5 @@
       "DOI": "n/a"
     }
   ],
-  "Version": "1.0.2"
+  "Version": "1.0.3"
 }
