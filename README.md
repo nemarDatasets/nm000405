@@ -47,8 +47,27 @@ Compiled after the upload from the article, its supplement and the source deposi
 
 **Electrode types.** ECoG came from subdural strips placed temporarily through standard frontal burr holes near the coronal suture, aimed posteriorly toward the hand-knob motor cortex. Strips had six contacts (left n=5 patients, right n=3), eight contacts (left 3, right 3) or twenty-eight contacts (left 2, right 2). STN LFP came from the clinical DBS lead (Medtronic model 3389, 4 contacts). Details are in Supplementary file 1a of the paper. Source: paper, Methods.
 
+**Channel types (30 Oct 2026).** The `STN_*` channels (60 rows in 20 runs) are contacts of the clinical DBS lead and are now typed `DBS` in channels.tsv (they were `SEEG`, description "StereoEEG"); `SEEGChannelCount` is 0 in those runs' `_ieeg.json` (BIDS has no DBS channel count field).
+
+**Duplicated run.** In sub-002 ses-right, run-1 repeats run-0: all 8 ECoG channels are sample-identical, and run-1's `MOV_LEFT`/`MOV_LEFT_CLEAN` equal run-0's `MOV_RIGHT`/`MOV_RIGHT_CLEAN` and vice versa (checked Oct 2026 by hashing every channel of all 73 runs; no other pair of runs shares a neural channel). One of the two runs therefore carries swapped hand labels, and the release does not say which. Count the pair once, and do not use the hand labels of either run without checking. Both files are kept as released.
+
+**Movement events.** No events.tsv is provided: the release has no event table or markers. The authors' cleaned force traces `MOV_LEFT_CLEAN`/`MOV_RIGHT_CLEAN` mark grip periods (positive values), but the release does not state the onset rule the authors used (a plain "> 0" rule gives 4358 onsets over both hands in the 72 distinct runs), so no events were derived here.
+
 **Localisation method.** For the subdural strips, preoperative MRI, intraoperative fluoroscopy and postoperative CT were aligned (Randazzo et al. 2016). CT and MRI were co-registered with SPM and rendered with Osirix v7.5 and FreeSurfer v5.3. Contacts were projected from the fluoroscopic image onto the cortical surface. The DBS contacts were reconstructed with Lead-DBS: preoperative MRI and postoperative CT were co-registered and normalised to MNI 2009b NLIN ASYM space. All contacts were "localized and transformed into MNI space" (paper, Methods "Electrode localization"; Figure 1B; coordinates in Figure 1—source data 1, elife-75126-fig1-data1.csv). The deposit has subject-level `sub-XXX_electrodes*.tsv` (mm, coordsystem "MNI") for all 16 subjects. The session-level `*_space-mni_electrodes.tsv` of this dataset carry the same positions in metres; their column `atlas_label_AAL3v1` adds an AAL3v1 atlas lookup of these coordinates (ieeg-atlas `coord_regions.py`, nearest labelled voxel; a derived label, not given by the authors). STN contacts are in the subthalamic nucleus per their channel names; AAL3 has no STN label, so their lookup names the nearest AAL3 structure.
 
 ## Units correction (2026-10-16)
 
 The released BrainVision headers declare 0.1 µV per stored unit, but with that scaling every subject's median channel standard deviation is 1.8e7-7.3e7 µV (18-73 V), which is physically impossible for ECoG/STN LFP. The release does not state the true unit, so the voltage channels are now labelled `n/a` in channels.tsv. The stored values are unchanged; relative amplitudes within a recording are unaffected. Review: NEMAR curator, 2026-10-15 (the same recording is also in nm000466).
+
+2026-10-17: the four movement channels (`MOV_RIGHT`, `MOV_LEFT`, `MOV_RIGHT_CLEAN`, `MOV_LEFT_CLEAN`, type MISC) are now also labelled `n/a` in channels.tsv, because nothing in the release shows they are in µV. Values unchanged.
+
+## Reading with MNE (added 2026-10-17, version 1.0.4)
+
+MNE and MNE-BIDS take the scale from the BrainVision header, not from channels.tsv. The headers still declare
+`0.1 µV` per stored unit for every channel, so `mne_bids.read_raw_bids` / `mne.io.read_raw_brainvision` return the ECoG
+and STN channels with standard deviations of tens of volts (robust SD 1.7e7-4.0e7 µV in the runs checked on
+2026-10-17). These numbers are not physical voltages: treat the ECoG/STN values as arbitrary units (channels.tsv `n/a`,
+see "Units correction"); relative amplitudes within a recording are unaffected. The amplitudes would be typical
+ECoG/LFP values (tens of µV) if divided by 1e6, but the release does not state the scale, so no factor is applied here.
+The same holds for the movement channels (`MOV_*`): their headers say µV, channels.tsv `n/a`. The `.vhdr` headers are
+left as released.
