@@ -1,0 +1,16 @@
+onset	duration	sample	trial_type	source_channel	peak_value	ends_at_recording_end
+7.232	0.691	7232	movement_onset_left	MOV_LEFT_CLEAN	0.586988	no
+7.294	0.643	7294	movement_onset_right	MOV_RIGHT_CLEAN	0.637554	no
+10.390	0.694	10390	movement_onset_left	MOV_LEFT_CLEAN	0.724408	no
+18.617	0.854	18617	movement_onset_left	MOV_LEFT_CLEAN	0.922116	no
+26.816	0.774	26816	movement_onset_right	MOV_RIGHT_CLEAN	0.872808	no
+35.005	0.826	35005	movement_onset_right	MOV_RIGHT_CLEAN	0.992606	no
+43.283	0.829	43283	movement_onset_right	MOV_RIGHT_CLEAN	0.95616	no
+47.373	0.812	47373	movement_onset_left	MOV_LEFT_CLEAN	1	no
+51.399	0.893	51399	movement_onset_right	MOV_RIGHT_CLEAN	0.984506	no
+55.487	0.930	55487	movement_onset_left	MOV_LEFT_CLEAN	0.90638	no
+63.601	0.906	63601	movement_onset_left	MOV_LEFT_CLEAN	0.869396	no
+67.733	0.856	67733	movement_onset_right	MOV_RIGHT_CLEAN	0.979105	no
+72.122	0.843	72122	movement_onset_right	MOV_RIGHT_CLEAN	1	no
+76.425	0.840	76425	movement_onset_right	MOV_RIGHT_CLEAN	0.971913	no
+89.716	0.872	89716	movement_onset_left	MOV_LEFT_CLEAN	0.791825	no

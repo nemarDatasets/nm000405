@@ -51,7 +51,19 @@ Compiled after the upload from the article, its supplement and the source deposi
 
 **Duplicated run.** In sub-002 ses-right, run-1 repeats run-0: all 8 ECoG channels are sample-identical, and run-1's `MOV_LEFT`/`MOV_LEFT_CLEAN` equal run-0's `MOV_RIGHT`/`MOV_RIGHT_CLEAN` and vice versa (checked Oct 2026 by hashing every channel of all 73 runs; no other pair of runs shares a neural channel). One of the two runs therefore carries swapped hand labels, and the release does not say which. Count the pair once, and do not use the hand labels of either run without checking. Both files are kept as released.
 
-**Movement events.** No events.tsv is provided: the release has no event table or markers. The authors' cleaned force traces `MOV_LEFT_CLEAN`/`MOV_RIGHT_CLEAN` mark grip periods (positive values), but the release does not state the onset rule the authors used (a plain "> 0" rule gives 4358 onsets over both hands in the 72 distinct runs), so no events were derived here.
+**Movement events.** The release has no event table or markers. Since Nov 2026, `events.tsv` files give movement
+onsets for the 11 patients of the paper (sub-000, 001, 004-010, 013, 014; 49 runs). The rule is the one in the authors'
+code (github.com/neuromodulation/ECoG_vs_STN, `Figure 1/Feature Plot/Feature Mean.ipynb`: onsets where
+`np.diff(y > 0) == 1`, threshold 0), applied to the authors' cleaned grip-force traces `MOV_LEFT_CLEAN` and
+`MOV_RIGHT_CLEAN`: one row per stretch where the trace is above 0, for each hand. Over these 49 runs there are 2685
+such stretches, the total the paper reports ("total n=2685", Merk et al. 2022): 2681 rising edges inside the runs plus 4
+stretches already above 0 at the first sample of a run (`movement_ongoing_at_start_*`). The per-patient counts differ
+from the paper's Table 1 (for example 121 vs 128 for sub-000, 138 + 2 vs 205 for sub-014), so the paper's per-patient
+selection is not reproduced; only the rule and the total are. The other 5 participants (sub-002, 003, 011, 012, 015)
+get no events (not in the paper's movement analysis). Code and per-run counts:
+`code/fix-20261102_movement_onsets/` (traces read from the released files in a Voyager Job, 2 Nov 2026). (An earlier
+note on a working branch said the release states no onset rule and quoted 4358 onsets over the 72 distinct runs of all
+16 participants; the rule is in the authors' code, as J. Gadonneix pointed out.)
 
 **Localisation method.** For the subdural strips, preoperative MRI, intraoperative fluoroscopy and postoperative CT were aligned (Randazzo et al. 2016). CT and MRI were co-registered with SPM and rendered with Osirix v7.5 and FreeSurfer v5.3. Contacts were projected from the fluoroscopic image onto the cortical surface. The DBS contacts were reconstructed with Lead-DBS: preoperative MRI and postoperative CT were co-registered and normalised to MNI 2009b NLIN ASYM space. All contacts were "localized and transformed into MNI space" (paper, Methods "Electrode localization"; Figure 1B; coordinates in Figure 1—source data 1, elife-75126-fig1-data1.csv). The deposit has subject-level `sub-XXX_electrodes*.tsv` (mm, coordsystem "MNI") for all 16 subjects. The session-level `*_space-mni_electrodes.tsv` of this dataset carry the same positions in metres; their column `atlas_label_AAL3v1` adds an AAL3v1 atlas lookup of these coordinates (ieeg-atlas `coord_regions.py`, nearest labelled voxel; a derived label, not given by the authors). STN contacts are in the subthalamic nucleus per their channel names; AAL3 has no STN label, so their lookup names the nearest AAL3 structure.
 
