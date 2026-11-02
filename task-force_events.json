@@ -1,0 +1,17 @@
+{
+  "onset": {"Description": "Start of a stretch where the authors' cleaned grip-force trace (MOV_LEFT_CLEAN or MOV_RIGHT_CLEAN) is above 0, i.e. the first sample with value > 0 after a sample <= 0 (the first sample of the run for movement_ongoing_at_start_* rows).", "Units": "s"},
+  "duration": {"Description": "Time until the trace returns to <= 0 (or the end of the run).", "Units": "s"},
+  "sample": {"Description": "0-based sample index of the onset at the run's 1000 Hz sampling rate."},
+  "trial_type": {
+    "Description": "Hand of the grip-force trace.",
+    "Levels": {
+      "movement_onset_left": "rising edge of MOV_LEFT_CLEAN > 0",
+      "movement_onset_right": "rising edge of MOV_RIGHT_CLEAN > 0",
+      "movement_ongoing_at_start_left": "MOV_LEFT_CLEAN is already > 0 at the first sample of the run (no onset inside the run)",
+      "movement_ongoing_at_start_right": "MOV_RIGHT_CLEAN is already > 0 at the first sample of the run (no onset inside the run)"
+    }
+  },
+  "source_channel": {"Description": "Channel the row was derived from."},
+  "peak_value": {"Description": "Maximum of the trace within the stretch, in the release's units (not stated; see channels.tsv)."},
+  "ends_at_recording_end": {"Description": "yes if the trace is still > 0 at the last sample of the run.", "Levels": {"yes": "stretch cut by the end of the run", "no": "stretch ends inside the run"}}
+}
