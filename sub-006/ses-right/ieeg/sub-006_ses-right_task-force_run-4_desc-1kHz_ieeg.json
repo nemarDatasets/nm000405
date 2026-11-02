@@ -12,7 +12,7 @@
   "RecordingType": "continuous",
   "iEEGReference": "referential montage, reference electrode placed in the scalp (paper methods)",
   "ECOGChannelCount": 36,
-  "SEEGChannelCount": 3,
+  "SEEGChannelCount": 0,
   "EEGChannelCount": 0,
   "EOGChannelCount": 0,
   "ECGChannelCount": 0,

@@ -1,3 +1,15 @@
+1.0.4 2026-10-30
+
+  - channels.tsv and ieeg.json: the 60 STN contacts in 20 runs typed DBS (were SEEG); SEEGChannelCount 0 in the
+    matching sidecars.
+  - channels.tsv (73 files): units of the four movement channels (MOV_RIGHT, MOV_LEFT, MOV_RIGHT_CLEAN,
+    MOV_LEFT_CLEAN) n/a instead of µV, because nothing in the release shows they are in µV. Values unchanged.
+  - events.tsv (49 new files, sub-000, 001, 004-010, 013, 014) and task-force_events.json: movement onsets, one
+    row per stretch where MOV_LEFT_CLEAN or MOV_RIGHT_CLEAN is above 0 (the authors' threshold-0 rule; 2685 rows,
+    the paper's total); code/fix-20261102_movement_onsets/.
+  - README: notes on the duplicated run sub-002 ses-right run-1 (repeats run-0 with swapped hand channels; count
+    once), the movement events and reading with MNE.
+
 1.0.3 2026-10-17
   - dataset_description.json: replace the citation-slug Name with the human-readable title supported by README.md. Dataset recordings unchanged. Source: README.md; https://doi.org/10.7554/eLife.75126.
 
