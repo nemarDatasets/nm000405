@@ -1,3 +1,6 @@
+1.0.4 2026-11-26
+  - README.md: remove the cross-reference to nm000466 from the "Units correction" section. That identifier now belongs to an unrelated dataset (handwriting-imagery EEG), so the reference no longer applies. Dataset recordings unchanged. Source: nemarDatasets/nm000466#1.
+
 1.0.3 2026-10-17
   - dataset_description.json: replace the citation-slug Name with the human-readable title supported by README.md. Dataset recordings unchanged. Source: README.md; https://doi.org/10.7554/eLife.75126.
 
